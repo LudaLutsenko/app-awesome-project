@@ -3,9 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>WeatherApp</title>
   </head>
   <body>
-    Hello GIT
+    <div class="container">
+      <div class="weather-app">
+
+        <form claass="searvh-form" id="search-form">
+          <div class="row">
+          <div class="col-9">
+            <input 
+            type="search" 
+            placeholder="Search for location" 
+            autofocus="on" 
+            autocomplete="off" 
+            id="city-input"
+            class="form-control shadow-sm"
+            />
+  </div>
+  <div class="col-3">
+    <input 
+    type="submit"
+    value="Search" 
+    class="form-control btn btn-primary shadow-sm w-100"
+    />
+          </div>
+          <div class="col-3">
+            <button
+            class="btn btn-success w-100"
+            id="current-location-button">
+            Current
+          </button>
+          </div>
+          </div>
+        </form>
+        <br/>
+        <br/>
+        <h1 id="city"></h1>
+        <br/>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img src="https://icons8.com/icon/8EUmYhfLPTCF/sun.png" alt="sunnyicon"class="weather-icon float-left"width="100x">
+              <div class="float-left">
+                <span class="temperature"id="temperature">19</span>
+                <span class="units">°C
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          </div>
+          
+
+          <br/>
+          <br/>
+          <div class="weather-prediction" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-day">Mon</div>
+                <img src="https://icons8.com/icon/8EUmYhfLPTCF/sun.png" alt="sunny"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>25°</strong></span>
+                <span class="temperature-min">12°</span>
+              </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-day">Tue</div>
+                <img src="https://icons8.com/icon/8EUmYhfLPTCF/sun.png" alt="sunny"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>25°</strong></span>
+                <span class="temperature-min">15°</span>
+              </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-day">Wed</div>
+                <img src="https://www.flaticon.com/free-icon/cloudy_1163661.png" alt="mostlyCloudy"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>25°</strong></span>
+                <span class="temperature-min">13°</span>
+              </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-day">Thu</div>
+              
+                <img src="https://www.flaticon.com/free-icon/sunny_4064276.png" alt="mostlySunny"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>26°</strong></span>
+                <span class="temperature-min">13°</span>
+              </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-day">Fri</div>
+                <img src="https://icons8.com/icon/8EUmYhfLPTCF/sun.png" alt="sunny"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>25°</strong></span>
+                <span class="temperature-min">14°</span>
+              </div>
+              </div>
+              <div class="col-2">
+                <div class="weather-day">Sat</div>
+                <img src="https://icons8.com/icon/8EUmYhfLPTCF/sun.png" alt="sunny"width="40px">
+              <div class="weather-forecast-temperature">
+                <span class="temperature-max"><strong>26°</strong></span>
+                <span class="temperature-min">14°</span>
+              </div>
+              </div>
+
+             
+    <script src="src/index.js"></script>
+   
+    
   </body>
 </html>
