@@ -22,7 +22,6 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
-
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -35,6 +34,10 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  let icon = document.querySelector(".weather-icon-today");
+  document.querySelector(".weather-icon-today").src =
+    "http://openweathermap.org/img/w/" + response.data.weather[0].icon + ".png";
 }
 
 function searchCity(city) {
