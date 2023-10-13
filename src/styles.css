@@ -14,6 +14,12 @@ h1 {
 h2 {
   font-weight: 500;
 }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
 .weather-app {
   background-image: url(https://images.unsplash.com/photo-1495756111155-45cb19b8aeee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80);
   background-position: center;
@@ -28,6 +34,9 @@ h2 {
 li {
   list-style: none;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 .form-control {
   border-radius: 30px;
   display: block;
@@ -40,9 +49,11 @@ li {
   background: linear-gradient(9deg, #4a606f, transparent);
   border-radius: 30px;
   opacity: 1;
+  text-align: center;
 }
 .weather-day {
   color: rgb(129, 42, 42);
+  text-align: center;
 }
 
 .col-2:hover {

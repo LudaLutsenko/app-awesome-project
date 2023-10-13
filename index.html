@@ -13,15 +13,11 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@0,400;1,300&family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>WeatherApp</title>
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-
+      <div class="weather-app"> 
         <form claass="search-form" id="search-form">
           <div class="row">
           <div class="col-9">
@@ -52,19 +48,19 @@
         </form>
         <br/>
         <br/>
-        <h1 id="city">London</h1>
+        <h1 id="city"></h1>
         <br/>
         <ul>
-          <li id="date"></li>
+          <li>Last updated: <span id="date"></span></li>
           <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
             <div class="clearfix">            
               <div class="float-left">
-                  <img class="weather-icon-today" src="http://openweathermap.org/img/w/02d.png">
-                <span class="temperature"id="temperature">19</span>
-                <span class="units">°C
+                  <img class="icon" src="http://openweathermap.org/img/w/02d.png">
+                <span class="temperature"id="temperature"></span>
+                <span class="units">°C|
                 </span>
               </div>
             </div>
@@ -81,60 +77,59 @@
           <br/>
           <div class="weather-prediction" id="forecast">
             <div class="row">
-              <div class="col-2">
-                <div class="day-date">Mon</div>
-                <img class="day-icon">
-              <div class="day-temp">
-                <span class="temperature-max"><strong>25°</strong></span>
-                <span class="temperature-min">12°</span>
-              </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-day">Tue</div>
-                <img class="weather-day-icon">
-              <div class="weather-forecast-temperature">
-                <span class="temperature-max"><strong>25°</strong></span>
-                <span class="temperature-min">15°</span>
-              </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-day">Wed</div>
-                <img class="weather-day-icon">
-              <div class="weather-forecast-temperature">
-                <span class="temperature-max"><strong>25°</strong></span>
-                <span class="temperature-min">13°</span>
-              </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-day">Thu</div>
-                <img class="weather-day-icon">
-              <div class="weather-forecast-temperature">
-                <span class="temperature-max"><strong>26°</strong></span>
-                <span class="temperature-min">13°</span>
-              </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-day">Fri</div>
-              <img class="weather-day-icon">
-              <div class="weather-forecast-temperature">
-                <span class="temperature-max"><strong>25°</strong></span>
-                <span class="temperature-min">14°</span>
-              </div>
-              </div>
-              <div class="col-2">
-                <div class="weather-day">Sat</div>
-                <img class="weather-day-icon">
-              <div class="weather-forecast-temperature">
-                <span class="temperature-max"><strong>26°</strong></span>
-                <span class="temperature-min">14°</span>
-              </div>
-              </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+                <div class="col-2">
+                    <div class="weather-forecast-day">Mon</div>
+                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
+                    <span class="weather-forecast-temperature-min">15°</span>
+                  </div>
+                  </div>
+            
             </br>
             </br>
 
               <small><a href="https://github.com/LudaLutsenko/app-awesome-project" target="_blank">Open-source code</a>, by Luda Lutsenko</small>   
-    <script src="src/index.js"></script>
-   
-    
+    <script src="src/index.js"></script> 
   </body>
 </html>
