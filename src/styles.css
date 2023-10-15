@@ -97,3 +97,14 @@ li#date {
   font-size: 20px;
   color: #113957;
 }
+
+a.active {
+  cursor: default;
+  color: #333;
+}
+a.active:hover {
+  text-decoration: none;
+}
+.weather-icon-today {
+  width: 100px;
+}
