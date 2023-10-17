@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,120 +17,82 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app"> 
+      <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
-          <div class="col-9">
-            <input 
-            type="search" 
-            placeholder="Search for city" 
-            autofocus="on" 
-            autocomplete="off" 
-            id="city-input"
-            class="form-control shadow-sm"
-            />
-  </div>
-  <div class="col-3">
-    <input 
-    type="submit"
-    value="Search" 
-    class="form-control btn btn-primary shadow-sm w-100"
-    />
-          </div>
-          <div class="col-3">
-            <button
-            class="btn btn-success w-100"
-            id="current-location-button">
-            Current
-          </button>
-          </div>
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Search for city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
           </div>
         </form>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1 id="city"></h1>
-        <br/>
+        <br />
         <ul>
           <li>Last updated: <span id="date"></span></li>
           <li id="description"></li>
-        </ul>     
-                <div class="row">
+        </ul>
+        <div class="row">
           <div class="col-6">
-            <div class="clearfix">            
+            <div class="clearfix">
               <div class="float-left">
-                  <img class="weather-icon-today" src=""
-                  id="icon">
-                <span class="temperature"id="temperature">19</span>
-                <span class="units"><a href="#" id="celsius-link" class="active">℃</a>|<a href="#" id="fahrenheit-link">℉</a>
+                <img class="weather-icon-today" src="" id="icon" />
+                <span class="temperature" id="temperature">19</span>
+                <span class="units"
+                  ><a href="#" id="celsius-link" class="active">℃</a>|<a
+                    href="#"
+                    id="fahrenheit-link"
+                    >℉</a
+                  >
                 </span>
               </div>
             </div>
           </div>
           <div class="col-6">
             <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
-          </div>
+        </div>
 
-          <br/>
-          <br/>
-          <div class="weather-prediction" id="forecast">
-            <div class="row">
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-                <div class="col-2">
-                    <div class="weather-forecast-day">Mon</div>
-                    <img class="weather-forecast-icon" src="http://openweathermap.org/img/w/02d.png">
-                  <div class="weather-forecast-temperatures">
-                    <span class="weather-forecast-temperature-max"><strong>25°</strong></span>
-                    <span class="weather-forecast-temperature-min">15°</span>
-                  </div>
-                  </div>
-            
-            </br>
-            </br>
+        <br />
+        <br />
+        <div class="weather-prediction" id="forecast"></div>
+      </div>
+    </div>
 
-              <small><a href="https://github.com/LudaLutsenko/app-awesome-project" target="_blank">Open-source code</a>, by Luda Lutsenko</small>   
-    <script src="src/index.js"></script> 
+    <small
+      ><a
+        href="https://github.com/LudaLutsenko/app-awesome-project"
+        target="_blank"
+        >Open-source code</a
+      >, by Luda Lutsenko</small
+    >
+
+    <script src="src/index.js"></script>
   </body>
 </html>
