@@ -1,13 +1,24 @@
 body {
-  background: linear-gradient(9deg, #0b2e47, transparent);
+  background: linear-gradient(9deg, var(--secondary-color), transparent);
   font-family: "Inter", sans-serif;
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+:root {
+  --primary-color: #90a2b0;
+  --secondary-color: #0b2e47;
+}
+.light-theme {
+  --primary-color: rgb(23, 43, 59);
+  --secondary-color: #c0d0dc;
+}
 
+#iconTheme {
+  cursor: pointer;
+}
 h1 {
-  color: #90a2b0;
+  color: var(--primary-color);
   text-align: center;
   font-size: 100px;
   font-weight: 500;
@@ -15,14 +26,13 @@ h1 {
 h2 {
   font-weight: 500;
 }
-.container {
-}
+
 .weather-app {
-  background-color: #0b2e47;
+  background-color: var(--secondary-color);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  border: 1px solid #0b2e47;
+
   padding: 70px 100px;
   border-radius: 30px;
   margin: 20px 50px 100px;
@@ -38,10 +48,6 @@ li:first-letter {
 }
 .form-control {
   border-radius: 30px;
-  display: block;
-  width: 100%;
-  font-weight: 400;
-  line-height: 1.5;
 }
 
 .weather-forecast-day {
@@ -79,9 +85,6 @@ li:first-letter {
 .btn-primary {
   background: cadetblue;
   border: none;
-}
-.btn-primary:hover {
-  background: #173c58;
 }
 .temperature {
   color: #4a606f;

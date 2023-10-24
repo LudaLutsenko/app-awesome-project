@@ -153,3 +153,13 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+var icon = document.getElementById("iconTheme");
+iconTheme.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    icon.src = "images/sun.png";
+  } else {
+    icon.src = "images/moon.png";
+  }
+};
